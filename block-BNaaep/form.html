@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/stylesheets/style.css">
+    <title>Contact</title>
+</head>
+<body class="p-32">
+    <form action="/form" method="POST" class="flex flex-col items-center">
+        <input type="text" name="name" placeholder="Name" class="mb-4 border-2 p-2 w-64">
+        <input type="email" name="email" placeholder="Email" class="mb-4 border-2 p-2 w-64">
+        <input type="text" name="username" placeholder="User Name" class="mb-4 border-2 p-2 w-64">
+        <input type="number" name="age" placeholder="Age" class="mb-4 border-2 p-2 w-64">
+        <textarea name="bio" class="border-2 p-2 mb-4 w-64" ></textarea>
+        <input type="submit" value="submit" class="border-2 pr-2 pl-2">
+    </form>
+</body>
+</html>
