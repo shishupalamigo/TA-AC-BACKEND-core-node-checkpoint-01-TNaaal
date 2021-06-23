@@ -6,7 +6,8 @@ const url = require('url');
 const server = http.createServer(handleRequest);
 
 function handleRequest(req, res) {
-  let parsedUrl = url.parse(req.url, true);  
+  let parsedUrl = url.parse(req.url, true);
+   
   let store = '';
     req.on('data', (chunk) => {
         store += chunk;
@@ -28,7 +29,8 @@ function handleRequest(req, res) {
       }
 
       else if (req.url.split('.').pop() === 'jpg' || req.url.split('.').pop() === 'png') {
-        res.setHeader('Content-Type', 'image/jpg');
+        let imgFormat = req.url.split('.').pop();
+        res.setHeader('Content-Type', `image/${imgFormat}`);
         fs.createReadStream(`./${req.url}`).pipe(res);
       }
        else if(req.url.split('.').pop() === 'js') {
