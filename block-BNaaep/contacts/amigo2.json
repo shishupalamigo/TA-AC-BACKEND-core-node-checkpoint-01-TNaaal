@@ -1,1 +1,7 @@
-{"name":"shishupal","email":"shisgupal.bhu@gmail.com","username":"amigo2","age":"23","bio":"Hello World"}
+{
+  "name": "shishupal",
+  "email": "shisgupal.bhu@gmail.com",
+  "username": "amigo2",
+  "age": "23",
+  "bio": "Hello World"
+}
